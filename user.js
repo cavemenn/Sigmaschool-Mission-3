@@ -1,12 +1,12 @@
-class User {
+export class User {
   constructor(firstName, lastName) {
     this.firstName = firstName;
     this.lastName = lastName;
   }
 
   get fullname() {
-    return `${firstName} ${lastName}`;
+    return `${this.firstName} ${this.lastName}`;
   }
 }
 
-module.exports = User;
+// module.exports = User;
