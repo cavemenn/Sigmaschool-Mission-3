@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ledger Balance System</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Ledger&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
@@ -20,6 +23,17 @@
     </div>
     <button id="calculate-btn">Calculate Balance</button>
     <div id="result" class="result"></div>
+    <table id="ledger-table" hidden>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Amount</th>
+          <th>Type</th>
+          <th>% of income</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
   </div>
   <script type="module" src="script.js"></script>
 </body>

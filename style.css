@@ -1,4 +1,4 @@
-body { font-family: Arial, sans-serif; background: #f5f5f5; margin: 0; padding: 20px; }
+body { font-family: 'Ledger', sans-serif; background: #f5f5f5; margin: 0; padding: 20px; }
 
 .container {
   max-width: 500px;
@@ -48,3 +48,18 @@ button:hover { background: #34495e; }
   font-size: 18px;
   font-weight: bold;
 }
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th, td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th { background: #f0f3f6; color: #2c3e50; }
