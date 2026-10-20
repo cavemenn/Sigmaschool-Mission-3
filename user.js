@@ -5,7 +5,7 @@ export class User {
   }
 
   get fullname() {
-    return `${this.firstName} ${this.lastName}`;
+    return [this.firstName, this.lastName].filter(Boolean).join(' ');
   }
 }
 

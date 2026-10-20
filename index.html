@@ -3,26 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ledger Balance System</title>
+  <title>LedgerLads</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Ledger&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <img src="ledger.png" alt="Ledger Header">
-    <h1>Ledger Balance System</h1>
-    <p id="greeting"></p>
+  
+  <main class="container">
+    <header class="banner">
+      <img src="STONKS.png" alt="Banner Header">
+      <div class="banner-text">
+        <h1>LedgerLads</h1>
+        <p>The only bookkeeping solution you'll ever need!</p>
+        <p id="greeting"></p>
+      </div>
+    </header>
     <div class="form">
-      <label>Salary:       <input type="number" id="salary" placeholder="0"></label>
-      <label>Food:         <input type="number" id="food" placeholder="0"></label>
-      <label>Rent:         <input type="number" id="rent" placeholder="0"></label>
-      <label>Others:       <input type="number" id="others" placeholder="0"></label>
-      <label>Saving Goal:  <input type="number" id="saving" placeholder="0"></label>
+      <label>Salary:       <input type="number" id="salary" placeholder="0" min="0"></label>
+      <label>Food:         <input type="number" id="food" placeholder="0" min="0"></label>
+      <label>Rent:         <input type="number" id="rent" placeholder="0" min="0"></label>
+      <label>Shopping:     <input type="number" id="shopping" placeholder="0" min="0"></label>
+      <label>Others:       <input type="number" id="others" placeholder="0" min="0"></label>
+      <label>Saving Goal:  <input type="number" id="saving" placeholder="0" min="0"></label>
     </div>
     <button id="calculate-btn">Calculate Balance</button>
-    <div id="result" class="result"></div>
+    <div id="result" class="result" hidden></div>
     <table id="ledger-table" hidden>
       <thead>
         <tr>
@@ -34,7 +41,7 @@
       </thead>
       <tbody></tbody>
     </table>
-  </div>
+  </main>
   <script type="module" src="script.js"></script>
 </body>
 </html>
